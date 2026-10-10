@@ -438,13 +438,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download
-        uses: actions/download-artifact@v4
-        with:
-          path: ./dist/
-          pattern: artifact-*
-          merge-multiple: true
-
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
