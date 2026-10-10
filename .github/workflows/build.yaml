@@ -310,7 +310,7 @@ jobs:
 
   build:
     # Releases publish where the release links point: the public repository.
-    if: github.repository == 'chen08209/FlClash' && github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    if: true
     needs: [ dart, plugins, go, android, rust, windows-helper-test ]
     runs-on: ${{ matrix.os }}
     strategy:
